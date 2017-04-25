@@ -1,4 +1,5 @@
 <?
 ini_set('display_errors', 1);
-require_once 'core/homeworks.php';
+$paths = 'core/homeworks.php';
+require_once $paths;
 Route::start();

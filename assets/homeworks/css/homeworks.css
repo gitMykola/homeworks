@@ -1,0 +1,101 @@
+html,body{
+	margin:0;
+	padding:0;
+	min-height:100%;
+}
+body{
+	display:inline-block;
+	position:relative;
+	background:#eee;
+	background:linear-gradient(#eee,#888);
+	width:100%;
+}
+a,label,p,h1,h2,h3,h4,h5,button,span{
+	font-family: "Open Sans", sans-serif;
+    font-weight:100;
+}
+a{
+	text-decoration:none;
+}
+.hw-invisible{
+	display:none;
+}
+#modal{
+	position:fixed;
+	top:0;
+	left:0;
+	background:#000;
+	background:rgba(0,0,0,0.8);
+	color:#fff;
+	width:100%;
+	height:100%;
+	overflow-y:auto;
+}
+#modal h1{
+	width:100%;
+	padding:50px 0;
+	text-align:center;
+}
+#modal a{
+	display:inline-block;
+	margin:5px;
+	padding:10px;
+	color:#ccc;
+	border:1px solid #aaa;
+}
+#modal a:hover{
+	color:#fff;
+	border:1px solid #fff;
+	text-decoration:none;
+}
+#modal .glyphicon-remove{
+	display:block;
+	position:absolute;
+	color:#ccc;
+	top:10px;
+	right:10px;
+	cursor:pointer;
+}
+#modal .glyphicon-remove:hover{
+	color:#fff;
+}
+#modal input, #modal textarea{
+	color:#000;
+}
+#modal #text{
+	text-align:justify;
+	text-indent:20px;
+}
+#loginBlock > span{
+	color:#ccc;
+	cursor:pointer;
+}
+#loginBlock > span:hover{
+	color:#fff;
+}
+#loginBlock .slideForm{
+	display:none;
+	width:200px;
+	background:#bbb;
+	position:fixed;
+	top:50px;
+	right:10px;
+	padding:5px;
+	z-index:10;
+}
+#loginBlock .slideForm label:last-child{
+	background:#ddd;
+	cursor:pointer;
+	padding:1px 6px;
+	margin:5px 0;
+}
+#loginBlock input{
+	margin:0 0 5px 0;
+}
+#loginBlock button{
+	float:center;
+	margin:5px 0; 
+}
+@media screen and (max-width:1024px){
+}	
+

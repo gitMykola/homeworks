@@ -5,11 +5,11 @@ class controller_homeworks {
 	public $view;
 	
 	function __construct(){
-		$this->model = new model_homeworks_task;
-		$this->view = new view_homeworks_task;
+		//$this->model = new model_homeworks;
+		$this->view = new view_homeworks;
 	}
 	function action_start(){
-		$this->view->generate('view_homeworks.php');
+		$this->view->generate('template_homeworks.php');
 	}
 	function action_login(){
 	}

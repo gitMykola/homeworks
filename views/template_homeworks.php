@@ -8,24 +8,30 @@
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-		<link rel="stylesheet" href="/css/homeworks.css">
+		<link rel="stylesheet" href="assets/homeworks/css/homeworks.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="/js/homeworks.js"></script>
+		<script src="assets/homeworks/js/homeworks.js"></script>
 </head>
 	<body>
 	<nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
 		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+			</button>
 		  <a class="navbar-brand" href="#">Homeworks</a>
 		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
 		<ul class="nav navbar-nav">
 		  <li class="w3-padding w3-text-light-grey w3-xlarge">Welcome</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 		  <li id="loginBlock">
 			<a class="w3-large w3-padding" href="#"><span class="glyphicon glyphicon-log-in w3-padding"></span>Login</a>
-			<form class="slideForm" method=post action="/task/admin" onsubmit="validForm(this)">
+			<form class="slideForm" method=post action="" onsubmit="validForm(this)">
 				<label for="loginName" class="col-sm-12">login:</label>
 							<input type="text" id="loginName" name=login>
 				<label for="loginPass" class="col-sm-12">password:</label>
@@ -35,38 +41,13 @@
 			</form>
 		  </li>
 		</ul>
+		</div>
 	  </div>
 	</nav>
 		<div class="container">
-			<div class="text-center col-sm-6">
-				<div class="create-item col-sm-6 w3-large">
-					<label for="userName" >Name:</label>
-					<input type="text" id="userName" class="col-sm-12">
-				  </div>
-				<div class="create-item col-sm-6 w3-large">
-					<label for="eMail">Email:</label>
-					<input type="email" id="eMail" class="col-sm-12">
-				  </div>
-				<div class="create-item col-sm-12 w3-large w3-padding-16">
-					<label for="text">Task text:</label>
-					<textarea id="text" class="col-sm-12" rows="3"></textarea>
-				  </div>
-				<div class="create-item col-sm-12 w3-large">
-							<label for="status">Task status:</label>
-							<input type="checkbox" id="status" value="">
-						  </div> 
-			</div>
-			<div class="col-sm-6">
-				 <div class="create-item col-sm-12 text-center w3-margin">
-					<img src="" id="image" height="280">
-					<canvas class="hidden" id="canvas" width="360" height="280"></canvas>
-					<input class="hidden" type="file" id="inputImage">
-					<label id="labelImage" for="inputImage" class="col-sm-12 w3-border w3-hover-text-grey w3-padding w3-margin">Task image(select file)</label>
-				  </div>
-			</div>	
-			<button type="submit" class="btn btn-primary col-sm-12 w3-margin w3-large" onclick="Create()">Create</button>
+
 		</div>	
-		<div id="modal" class="text-center taskInv">
+		<div id="modal" class="text-center hw-invisible">
 			<h1 class="message"></h1>
 			<a href="#" onclick="$(this.parentNode).fadeOut();">Continue create tasks</a>
 			<a href="http://klimatcontrol.com.ua/task/create" onclick="$(this.parentNode).fadeOut();">New task</a>
